@@ -4,7 +4,7 @@ API backend - Rick And Morty
 
 ## Teste também pelo Heroku
 ```
-
+https://ricky-and-morty-api.herokuapp.com/rick-and-morty/api-docs/
 ```
 ## 🚀 Começando
 
