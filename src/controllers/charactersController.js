@@ -10,7 +10,9 @@ const findcharacterController = async (req, res) => {
 const findcharacterByIdController = async (req, res) => {
   const idParam = req.params.id;
 
-  const chosenItems = await characterService.findcharacterByIdController(idParam);
+  const chosenItems = await characterService.findcharacterByIdController(
+    idParam,
+  );
 
   res.send(chosenItems);
 };

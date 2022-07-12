@@ -1,6 +1,5 @@
 const Character = require('../module/Characters');
-const Characters = require('../module/Characters')
-
+const Characters = require('../module/Characters');
 
 const findcharacterService = async () => {
   const characters = await Characters.find();
@@ -13,17 +12,20 @@ const findcharacterByIdController = async (id) => {
 };
 
 const createcharacterService = async (newcharacter) => {
-  const characterAdd = await Character.create(newcharacter)
+  const characterAdd = await Character.create(newcharacter);
   return characterAdd;
 };
 
 const updatecharacterService = async (id, characterEdited) => {
-  const characterUpdated = await Character.findByIdAndUpdate(id, characterEdited)
+  const characterUpdated = await Character.findByIdAndUpdate(
+    id,
+    characterEdited,
+  );
   return characterUpdated;
 };
 
 const deletecharacterService = async (id) => {
-  return await Character.findByIdAndDelete(id)
+  return await Character.findByIdAndDelete(id);
 };
 
 module.exports = {
