@@ -12,8 +12,8 @@ app.use(express.json());
 connectedToDatabase();
 
 app.use(cors());
-app.use('/', routes);
-app.use('/', routeSwagger);
+app.use('/rick-and-morty', routes);
+app.use('/rick-and-morty', routeSwagger);
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
