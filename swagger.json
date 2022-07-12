@@ -20,7 +20,7 @@
     }
   ],
   "paths": {
-    "/rick-and-morty/characters": {
+    "/characters": {
       "get": {
         "summary": "Lista de todos os personagens",
         "description": "Rota responsável por listar todos personagens cadastrados",
@@ -45,7 +45,7 @@
         }
       }
     },
-    "/rick-and-morty/character/{id}": {
+    "/character/{id}": {
       "get": {
         "summary": "Busca uma personagem pelo ID",
         "description": "Rota responsável por buscar uma personagem pelo ID",
@@ -76,7 +76,7 @@
         }
       }
     },
-    "/rick-and-morty/create": {
+    "/create": {
       "post": {
         "summary": "Cadastrar um personagem",
         "description": "Rota responsável por cadastrar um novo personagem",
@@ -117,7 +117,7 @@
         }
       }
     },
-    "/rick-and-morty/update/{id}": {
+    "/update/{id}": {
       "put": {
         "summary": "Editar um personagem pelo ID",
         "description": "Rota responsável por editar um personagem pelo ID",
@@ -166,7 +166,7 @@
         }
       }
     },
-    "/rick-and-morty/delete/{id}": {
+    "/delete/{id}": {
       "delete": {
         "summary": "Apagar um personagem pelo ID",
         "description": "Rota responsável por apagar um personagem pelo ID",
