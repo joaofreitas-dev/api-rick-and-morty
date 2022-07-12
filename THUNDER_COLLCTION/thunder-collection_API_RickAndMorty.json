@@ -1,0 +1,94 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "API_RickAndMorty",
+  "dateExported": "2022-07-12T16:22:02.931Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "17799bb9-931c-4300-b757-b7c06351c9fb",
+      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
+      "containerId": "",
+      "name": "GET_ALL",
+      "url": "http://localhost:3000/rick-and-morty/characters/",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-07-12T15:46:22.117Z",
+      "modified": "2022-07-12T15:48:25.182Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "1550a891-02aa-403a-93bc-0b2a46a95aa0",
+      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
+      "containerId": "",
+      "name": "GET_BY_ID",
+      "url": "http://localhost:3000/rick-and-morty/character/",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2022-07-12T15:47:02.766Z",
+      "modified": "2022-07-12T15:48:50.757Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "61235a78-f3cc-4837-8b66-34a3d0924426",
+      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
+      "containerId": "",
+      "name": "CREATE_CHARACTER",
+      "url": "http://localhost:3000/rick-and-morty/create",
+      "method": "POST",
+      "sortNum": 60000,
+      "created": "2022-07-12T15:50:06.542Z",
+      "modified": "2022-07-12T15:51:03.797Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "381814e9-0ee9-4ef7-8ff5-357378eb6eb8",
+      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
+      "containerId": "",
+      "name": "UPDATE_CHARACTER",
+      "url": "http://localhost:3000/rick-and-morty/update/62cd945bf69d943347dbbcd4",
+      "method": "PUT",
+      "sortNum": 80000,
+      "created": "2022-07-12T15:51:43.350Z",
+      "modified": "2022-07-12T15:54:24.260Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "c5f09114-b052-40ac-9829-6736b3551a2e",
+      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
+      "containerId": "",
+      "name": "DELETE_CHARACTER",
+      "url": "http://localhost:3000/rick-and-morty/delete/",
+      "method": "DELETE",
+      "sortNum": 90000,
+      "created": "2022-07-12T15:54:55.206Z",
+      "modified": "2022-07-12T15:56:30.482Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}
