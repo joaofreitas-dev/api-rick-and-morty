@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000/rick-and-morty/",
+      "url": "http://localhost:3001/",
       "description": "API de teste"
     },
     {
