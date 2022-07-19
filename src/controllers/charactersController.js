@@ -1,53 +1,76 @@
 const characterService = require('../services/charactersService');
 
-const mongoose = require('mongoose');
 
-const findcharacterController = async (req, res) => {
-  const allItems = await characterService.findcharacterService();
-  res.send(allItems);
+
+const findCharacterController = async (req, res) => {
+  const allCharacter = await characterService.findCharacterService();
+  res.send(allCharacter);
 };
 
-const findcharacterByIdController = async (req, res) => {
+const findCharacterByIdController = async (req, res) => {
   const idParam = req.params.id;
 
-  const chosenItems = await characterService.findcharacterByIdController(
+  const chosenCharacter = await characterService.findCharacterByIdController(
     idParam,
   );
 
-  res.send(chosenItems);
+  res.send(chosenCharacter);
 };
 
-const createcharacterController = async (req, res) => {
-  const item = req.body;
+const createCharacterController = async (req, res) => {
+  const character = req.body;
 
-  const newItem = await characterService.createcharacterService(item);
-  res.status(201).send(newItem);
+  const newCharacter = await characterService.createCharacterService(character);
+  res.status(201).send(newCharacter);
 };
 
-const updatecharacterController = async (req, res) => {
+const updateCharacterController = async (req, res) => {
   const idParam = req.params.id;
-  const itemEdit = req.body;
+  const characterEdit = req.body;
 
-  const updatedItem = await characterService.updatecharacterService(
+  const updatedCharacter = await characterService.updateCharacterService(
     idParam,
-    itemEdit,
+    characterEdit,
   );
 
-  res.send(updatedItem);
+  res.send(updatedCharacter);
 };
 
-const deletecharacterController = async (req, res) => {
+const deleteCharacterController = async (req, res) => {
   const idParam = req.params.id;
 
-  await characterService.deletecharacterService(idParam);
+  await characterService.deleteCharacterService(idParam);
 
   res.send({ message: 'Personagem deletado com sucesso!' });
 };
 
+
+  const searchCharactersController = async (req, res) => {
+  const { name } = req.query;
+
+  const character = await characterService.searchCharacterService(name);
+
+  if (character.length === 0) {
+    return res
+      .status(400)
+      .send({ message: "Não existem personagens com essa mensagem!" });
+  }
+
+  return res.send({
+    character: character.map((character => ({
+      id: character.id,
+      user: character.username,    
+      name: character.name,
+      imageUrl: character.imageUrl
+    }))),
+  });
+};
+
 module.exports = {
-  findcharacterController,
-  findcharacterByIdController,
-  createcharacterController,
-  updatecharacterController,
-  deletecharacterController,
+  findCharacterController,
+  findCharacterByIdController,
+  createCharacterController,
+  updateCharacterController,
+  deleteCharacterController,
+  searchCharactersController
 };

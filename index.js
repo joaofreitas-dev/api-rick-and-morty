@@ -4,16 +4,18 @@ const port = process.env.PORT || 3001;
 const app = express();
 const cors = require('cors');
 const routes = require('./src/routes/charactersRoute');
-const routeSwagger = require('./src/routes/swaggerRoute');
+const swaggerRoute = require('./src/routes/swaggerRoute');
 const connectedToDatabase = require('./src/database/database');
-
-app.use(express.json());
+const userRoute = require('./src/users/usersRoute');
+const authRoute = require('./src/auth/authRoute')
 
 connectedToDatabase();
-
+app.use(express.json());
 app.use(cors());
 app.use('/', routes);
-app.use('/', routeSwagger);
+app.use('/', swaggerRoute);
+app.use('/users', userRoute);
+app.use('/auth', authRoute);
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);

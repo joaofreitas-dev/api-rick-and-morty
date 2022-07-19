@@ -1,94 +1,132 @@
 {
-  "client": "Thunder Client",
-  "collectionName": "API_RickAndMorty",
-  "dateExported": "2022-07-12T16:22:02.931Z",
-  "version": "1.1",
-  "folders": [],
-  "requests": [
-    {
-      "_id": "17799bb9-931c-4300-b757-b7c06351c9fb",
-      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
-      "containerId": "",
-      "name": "GET_ALL",
-      "url": "http://localhost:3000/rick-and-morty/characters/",
-      "method": "GET",
-      "sortNum": 30000,
-      "created": "2022-07-12T15:46:22.117Z",
-      "modified": "2022-07-12T15:48:25.182Z",
-      "headers": [],
-      "params": [],
-      "tests": []
-    },
-    {
-      "_id": "1550a891-02aa-403a-93bc-0b2a46a95aa0",
-      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
-      "containerId": "",
-      "name": "GET_BY_ID",
-      "url": "http://localhost:3000/rick-and-morty/character/",
-      "method": "GET",
-      "sortNum": 40000,
-      "created": "2022-07-12T15:47:02.766Z",
-      "modified": "2022-07-12T15:48:50.757Z",
-      "headers": [],
-      "params": [],
-      "tests": []
-    },
-    {
-      "_id": "61235a78-f3cc-4837-8b66-34a3d0924426",
-      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
-      "containerId": "",
-      "name": "CREATE_CHARACTER",
-      "url": "http://localhost:3000/rick-and-morty/create",
-      "method": "POST",
-      "sortNum": 60000,
-      "created": "2022-07-12T15:50:06.542Z",
-      "modified": "2022-07-12T15:51:03.797Z",
-      "headers": [],
-      "params": [],
-      "body": {
-        "type": "json",
-        "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
-        "form": []
-      },
-      "tests": []
-    },
-    {
-      "_id": "381814e9-0ee9-4ef7-8ff5-357378eb6eb8",
-      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
-      "containerId": "",
-      "name": "UPDATE_CHARACTER",
-      "url": "http://localhost:3000/rick-and-morty/update/62cd945bf69d943347dbbcd4",
-      "method": "PUT",
-      "sortNum": 80000,
-      "created": "2022-07-12T15:51:43.350Z",
-      "modified": "2022-07-12T15:54:24.260Z",
-      "headers": [],
-      "params": [],
-      "body": {
-        "type": "json",
-        "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
-        "form": []
-      },
-      "tests": []
-    },
-    {
-      "_id": "c5f09114-b052-40ac-9829-6736b3551a2e",
-      "colId": "1ee7ff56-3e20-452c-bf5e-9cc0af19a63f",
-      "containerId": "",
-      "name": "DELETE_CHARACTER",
-      "url": "http://localhost:3000/rick-and-morty/delete/",
-      "method": "DELETE",
-      "sortNum": 90000,
-      "created": "2022-07-12T15:54:55.206Z",
-      "modified": "2022-07-12T15:56:30.482Z",
-      "headers": [],
-      "params": [],
-      "body": {
-        "type": "json",
-        "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
-        "form": []
-      },
-      "tests": []
-    }
-  ]
+    "client": "Thunder Client",
+    "collectionName": "API_RickAndMorty",
+    "dateExported": "2022-07-18T20:47:24.944Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b058eec4-468a-494f-b760-7e653964c914",
+            "colId": "673c1d6b-a855-4380-8199-010da454c093",
+            "containerId": "",
+            "name": "GET_ALL",
+            "url": "{{baseURL}}/characters/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-07-12T16:26:24.152Z",
+            "modified": "2022-07-18T17:32:23.365Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f13d99e7-1900-4932-a58d-9ed80e05145c",
+            "colId": "673c1d6b-a855-4380-8199-010da454c093",
+            "containerId": "",
+            "name": "GET_BY_ID",
+            "url": "{{baseURL}}/character/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2022-07-12T16:26:24.156Z",
+            "modified": "2022-07-18T17:32:36.206Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ce929b9c-0242-418a-abf8-8a3aa70dfd50",
+            "colId": "673c1d6b-a855-4380-8199-010da454c093",
+            "containerId": "",
+            "name": "CREATE_CHARACTER",
+            "url": "{{baseURL}}/create",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2022-07-12T16:26:24.157Z",
+            "modified": "2022-07-18T17:32:54.622Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8bd1a90e-7de0-486b-8e08-a96e9265e10a",
+            "colId": "673c1d6b-a855-4380-8199-010da454c093",
+            "containerId": "",
+            "name": "UPDATE_CHARACTER",
+            "url": "http://localhost:3001/update/62cd945bf69d943347dbbcd4",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2022-07-12T16:26:24.158Z",
+            "modified": "2022-07-18T17:28:00.941Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6433613d-8f47-442a-8288-d084f8b94aaf",
+            "colId": "673c1d6b-a855-4380-8199-010da454c093",
+            "containerId": "",
+            "name": "DELETE_CHARACTER",
+            "url": "{{baseURL}}/delete/62d5c50ef9a2e23680c6b971",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2022-07-12T16:26:24.159Z",
+            "modified": "2022-07-18T20:47:07.004Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"user\": \"\",\n    \"name\": \"\",\n    \"imageUrl\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "07d04c32-dd9a-4504-a6bd-a25e381aad83",
+            "colId": "673c1d6b-a855-4380-8199-010da454c093",
+            "containerId": "",
+            "name": "REGISTER_USER",
+            "url": "{{baseURL}}/users",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2022-07-18T17:33:24.266Z",
+            "modified": "2022-07-18T20:39:42.936Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"\",\n    \"username\": \"\",\n    \"email\": \"\",\n    \"password\": \"\",\n    \"photo\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "de56e30b-89a9-456c-93dc-14808f99a9dd",
+            "colId": "673c1d6b-a855-4380-8199-010da454c093",
+            "containerId": "",
+            "name": "LOGIN",
+            "url": "{{baseURL}}/auth/login",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2022-07-18T17:33:59.056Z",
+            "modified": "2022-07-18T20:45:50.256Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"\",\n    \"password\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
 }
